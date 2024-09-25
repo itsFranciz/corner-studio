@@ -9,7 +9,7 @@ import Events from '@/components/Events.vue'
 <template>
   <main>
     <Header />
-
+    <Events />
     <Footer />
   </main>
 </template>

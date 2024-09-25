@@ -6,7 +6,7 @@ import tcs_logo from '../assets/tcs_logo.png';
  <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5">
         <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
             <a href="https://flowbite.com" class="flex items-center">
-                <img :src="tcs_logo" class="mr-3 h-9 sm:h-12" alt="TCS Logo" />
+                <img :src="tcs_logo" class="mr-3 h-20 w-20" alt="TCS Logo" />
             </a>
             <div class="flex items-center lg:order-2 ml-auto">
                 <a href="#" class="text-white hover:bg-white border border-black hover:text-black focus:ring-4 focus:outline-none focus:ring-white font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 bg-black">  Book Now!</a>
