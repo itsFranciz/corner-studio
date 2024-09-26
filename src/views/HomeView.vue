@@ -1,11 +1,17 @@
 <script setup>
 import Header from '@/components/Header.vue'
 import Footer from '@/components/Footer.vue'
+
 import hero_image from '../assets/hero-sample.jpg'
+
+import Events from '@/components/Events.vue'
+
+
 
 </script>
 
 <template>
+
 
     <main>
       <Header />
@@ -22,10 +28,12 @@ import hero_image from '../assets/hero-sample.jpg'
             <img :src="hero_image" alt="" class="rounded-tl-3xl mt-10 xl:absolute xl:max-w-[697px] xl:max-h-[465px] xl:bottom-0 xl:right-0"/>
     
           </div>
+          
+          <Events />
+          
         </body>
       <Footer />
     </main>
-
 </template>
 
 
