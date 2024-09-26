@@ -1,5 +1,91 @@
 <script setup>
 
+import sample from '../assets/sample.jpg'
+
+// Sample event data
+const events = [
+    {
+        id: 1,
+        title: 'Sample Night II',
+        location: 'The Corner Studio',
+        date: 'September 30, 2024, 7:00 PM',
+        description: 'Join us for an exciting evening filled with great performances, insightful discussions, and fun activities!',
+        image: sample,
+        link: '#',
+    },
+    {
+        id: 2,
+        title: 'Quiz Night',
+        location: 'The Corner Studio',
+        date: 'October 1, 2024, 8:00 PM',
+        description: 'Join us for a fun-filled quiz night with exciting prizes for the winners!',
+        image: sample,
+        link: '#',
+    },
+    {
+        id: 3,
+        title: 'Sample Night III: The Test',
+        location: 'The Corner Studio',
+        date: 'October 5, 2024, 7:30 PM',
+        description: 'An evening of great music and performances awaits you!',
+        image: sample,
+        link: '#',
+    },
+    {
+        id: 4,
+        title: 'Sample Night IV',
+        location: 'The Corner Studio',
+        date: 'October 10, 2024, 7:00 PM',
+        description: 'Enjoy a relaxing evening filled with art, music, and wonderful performances!',
+        image: sample,
+        link: '#',
+    },
+];
+</script>
+
+<template>
+    <div class="p-6">
+        <!-- Main heading -->
+        <h1 class="font-Quicksand text-[#CBF3F0] text-shadow-sm shadow-sea-blue text-stroke text-5xl mb-6">
+            Events at the Corner
+        </h1>
+    
+        <!-- Flex container for event cards -->
+        <div class="flex flex-wrap justify-center sm:justify-between gap-4">
+            
+            <!-- Loop through events -->
+            <div v-for="event in events" :key="event.id" class="w-full sm:w-[48%] md:w-[31%] lg:w-[23%] bg-white border border-black shadow">
+                <a :href="event.link">
+                    <img class="rounded-t-lg p-4 w-full h-auto" :src="event.image" :alt="`Card Image for ${event.title}`" />
+                </a>
+                <div class="p-5">
+                    <a :href="event.link">
+                        <h5 class="mb-2 text-2xl font-Rubik font-bold tracking-tight text-gray-900">{{ event.title }}</h5>
+                    </a>
+                    <!-- Location and Time -->
+                    <div class="mb-3 text-sm font-medium font-Rubik text-[#B6B5BB]">
+                        <p><i class="fa-solid fa-location-dot"></i> {{ event.location }}</p>
+                        <p><i class="fa-solid fa-clock"></i> {{ event.date }}</p>
+                    </div>
+                    <!-- Event Details -->
+                    <p class="mb-3 font-normal font-Rubik text-black">
+                        {{ event.description }}
+                    </p>
+                    <!-- Buy Tickets Button -->
+                    <div class="flex justify-center">
+                        <a :href="event.link" 
+                        class="w-full sm:w-48 text-white font-Rubik bg-[#F79300] hover:bg-white hover:text-[#F79300] focus:outline-none focus:ring-2 focus:ring-[#F79300] font-bold rounded px-5 py-2.5 hover:cursor-pointer text-center transition-colors duration-300">
+                            BUY TICKETS
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</template>
+=======
+
 </script>
 
 
@@ -82,6 +168,7 @@
 </div>
 
 </template>
+
 
 
 
