@@ -20,7 +20,8 @@ module.exports = {
         "orange" : "#F79300",
         "papaya-whip" : "#FFEFE0",
         "cyan" : "#CBF3F0",
-        "sunglow" : "#FFD166"
+        "sunglow" : "#FFD166",
+        "crayola": "#EF476F"
       },
       container:{
         padding: "2rem",
@@ -28,12 +29,11 @@ module.exports = {
       },
       screens:{
         sm: "640px",
-        md: "768px"
+        md: "768px",
+        lg: "1024px"
       },
       textShadow: {
-        sm: '6px 4px var(--tw-shadow-color)',
-        DEFAULT: '0 2px 4px var(--tw-shadow-color)',
-        lg: '0 8px 16px var(--tw-shadow-color)',
+        sm: '6px 4px var(--tw-shadow-color)'
       },
     },
   },
@@ -50,6 +50,9 @@ module.exports = {
         '.text-stroke': {
           '-webkit-text-stroke': '7px #183238',
           'paint-order': 'stroke fill',
+        },
+        '.max-w-60-ch': {
+        'max-width': '67ch'
         },
       });
     },
