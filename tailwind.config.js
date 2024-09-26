@@ -13,7 +13,10 @@ module.exports = {
         "weather-secondary" : "#004E71",
         "mint-green": "#CBF3F0",
         "sea-blue": "#183238",
-        "orange" : "#F79300"
+        "orange" : "#F79300",
+        "papaya-whip" : "#FFEFE0",
+        "cyan" : "#CBF3F0",
+        "sunglow" : "#FFD166"
       },
       container:{
         padding: "2rem",
