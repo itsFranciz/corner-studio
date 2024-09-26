@@ -1,7 +1,11 @@
 // tailwind.config.js
 module.exports = {
-  purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
-  darkMode: false, // or 'media' or 'class'
+  content: [
+    "./node_modules/flowbite/**/*.js",
+    './index.html',
+    './src/**/*.{vue,js,ts,jsx,tsx}'
+  ],
+
   theme: {
     extend: {
       fontFamily: {
@@ -33,10 +37,14 @@ module.exports = {
       },
     },
   },
+
   variants: {
     extend: {},
   },
+
   plugins: [
+    require('flowbite/plugin'),
+
     function ({ addUtilities }) {
       addUtilities({
         '.text-stroke': {
@@ -45,7 +53,7 @@ module.exports = {
         },
       });
     },
-    plugin(function ({ matchUtilities, theme }) {
+    function ({ matchUtilities, theme }) {
       matchUtilities(
         {
           'text-shadow': (value) => ({
@@ -54,6 +62,6 @@ module.exports = {
         },
         { values: theme('textShadow') }
       )
-    }),
+    },
   ],
 }
