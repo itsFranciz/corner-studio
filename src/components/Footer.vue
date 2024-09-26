@@ -39,13 +39,13 @@ import tcs_logo_white from '../assets/tcs_logo_white.png';
         <hr class="my-6 border-b border-white sm:mx-auto" />
 
         <p class="font-Rubik text-sm">
-           <a href="https://www.facebook.com/thecornerstudio.432" class="block text-sm text-white underline hover:no-underline">
+           <a href="https://www.facebook.com/thecornerstudio.432" target="_blank" class="block text-sm text-white underline hover:no-underline">
             <i class="fa-brands fa-facebook me-2"></i>The Corner Studio <br />
           </a>
-          <a href="https://www.instagram.com/thecornerstudio432/" class="block text-sm text-white underline hover:no-underline">
+          <a href="https://www.instagram.com/thecornerstudio432/" target="_blank" class="block text-sm text-white underline hover:no-underline">
             <i class="fa-brands fa-instagram me-2"></i>@thecornerstudio432 <br/>
           </a>
-          <a href="https://www.tiktok.com/@thecornerstudio432" class="block text-sm text-white underline hover:no-underline">
+          <a href="https://www.tiktok.com/@thecornerstudio432" target="_blank" class="block text-sm text-white underline hover:no-underline">
             <i class="fa-brands fa-tiktok me-2"></i>@thecornerstudio432 <br/>
           </a>
         </p>
