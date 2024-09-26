@@ -9,9 +9,9 @@ import hero_image from '../assets/hero-sample.jpg'
 
     <main>
       <Header />
-        <body class="relative">
+        <body class="">
           
-          <div class="container hero px-0 min-h-[110vh] mx-auto">
+          <div class="container hero px-0 min-h-[110vh] mx-auto relative">
     
             <div class="title flex flex-col item-start max-w-60-ch m-0 container xl:px-0">
               <h1 class="text-7xl font-bold mt-20 text-mint-green text-stroke text-shadow-sm shadow-sea-blue font-Quicksand">The best ideas start at the <span class="text-orange">corner.</span></h1>
