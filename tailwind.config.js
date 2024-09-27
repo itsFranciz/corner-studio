@@ -30,7 +30,9 @@ module.exports = {
       screens:{
         sm: "640px",
         md: "768px",
-        lg: "1024px"
+        lg: "1024px",
+        xl: '1280px',
+        xt: '1536px'
       },
       textShadow: {
         sm: '6px 4px var(--tw-shadow-color)'

@@ -4,7 +4,7 @@ import tcs_logo from '../assets/tcs_logo.png';
 
 <template>
         <nav class="border-gray-200 bg-white shadow-lg">
-            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto mb-4 xl:px-0 container">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto mb-4 xl:px-10 container xl:mx-auto">
                 <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
                     <img :src="tcs_logo" class="h-20" alt="Corner Studio Logo" />
                 </a>
