@@ -51,7 +51,7 @@ const events = [
         </h1>
     
         <!-- Flex container for event cards -->
-        <div class="flex flex-wrap justify-center sm:justify-between gap-4">
+        <div class="flex flex-wrap justify-center sm:justify-between gap-4 ">
             
             <!-- Loop through events -->
             <div v-for="event in events" :key="event.id" class="w-full sm:w-[48%] md:w-[31%] lg:w-[23%] bg-white border border-black shadow">
