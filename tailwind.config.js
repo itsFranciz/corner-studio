@@ -30,7 +30,9 @@ module.exports = {
       screens:{
         sm: "640px",
         md: "768px",
-        lg: "1024px"
+        lg: "1024px",
+        xl: '1280px',
+        xt: '1536px'
       },
       textShadow: {
         sm: '6px 4px var(--tw-shadow-color)'
@@ -49,6 +51,10 @@ module.exports = {
       addUtilities({
         '.text-stroke': {
           '-webkit-text-stroke': '7px #183238',
+          'paint-order': 'stroke fill',
+        },
+        '.text-stroke-crayola': {
+          '-webkit-text-stroke': '7px #4C1D23',
           'paint-order': 'stroke fill',
         },
         '.max-w-60-ch': {
