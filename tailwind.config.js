@@ -53,6 +53,10 @@ module.exports = {
           '-webkit-text-stroke': '7px #183238',
           'paint-order': 'stroke fill',
         },
+        '.text-stroke-crayola': {
+          '-webkit-text-stroke': '7px #4C1D23',
+          'paint-order': 'stroke fill',
+        },
         '.max-w-60-ch': {
         'max-width': '67ch'
         },
